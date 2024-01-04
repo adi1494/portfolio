@@ -3,25 +3,45 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  /* color primary */
+  --color-primary-100: #caf0f8;
+  --color-primary-200: #ade8f4;
+  --color-primary-300: #90e0ef;
+  --color-primary-400: #48cae4;
+  --color-primary-500: #00b4d8;
+  --color-primary-600: #0096c7;
+  --color-primary-700: #0077b6;
+  --color-primary-800: #023e8a;
+  --color-primary-900: #03045e;
+
+  /* color tertiary */
+  --color-tertiary-100: #dec9e9;
+  --color-tertiary-200: #d2b7e5;
+  --color-tertiary-300: #c19ee0;
+  --color-tertiary-400: #b185db;
+  --color-tertiary-500: #a06cd5;
+  --color-tertiary-600: #9163cb;
+  --color-tertiary-700: #815ac0;
+  --color-tertiary-800: #7251b5;
+  --color-tertiary-900: #6247aa;
+
+  /* color neutral */
+  --color-neutral-100: #f8f9fa;
+  --color-neutral-200: #e9ecef;
+  --color-neutral-300: #dee2e6;
+  --color-neutral-400: #ced4da;
+  --color-neutral-500: #adb5bd;
+  --color-neutral-600: #6c757d;
+  --color-neutral-700: #495057;
+  --color-neutral-800: #343a40;
+  --color-neutral-900: #212529;
+  --color-neutral-999: #111519;
 }
 
 @media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  color: var(--color-neutral-100);
+  background: var(--color-neutral-999);
 }

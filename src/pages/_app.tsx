@@ -1,3 +1,4 @@
+import Header from '@/components/header/header';
 import '@/styles/globals.css';
 import type { AppProps } from 'next/app';
 
@@ -7,6 +8,7 @@ const font = Baloo_2({ subsets: ['latin'] });
 export default function App({ Component, pageProps }: AppProps) {
   return (
     <div id="_app" className={`${font.className}`}>
+      <Header />
       <Component {...pageProps} />
     </div>
   );
